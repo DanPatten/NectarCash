@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "NectarHR Points to Dollars",
+  "version": "1.0",
+  "description": "Convert points on nectarhr.com to real dollar amounts (1 point = 10 cents).",
+	"host_permissions": [
+		"*://*/*"
+	],
+  "content_scripts": [
+    {
+      "matches": ["https://*.nectarhr.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
